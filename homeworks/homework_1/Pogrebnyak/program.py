@@ -432,7 +432,7 @@ temp_grad = 3 # геотермический градиент, К/м * (1e-2)
 import json
 
 # импорт json и перезапись существующих переменных
-with open(r'input_data\14.json', 'r', encoding='UTF-8') as input_data:
+with open(r'..\input_data\14.json', 'r', encoding='UTF-8') as input_data:
     input_data = json.load(input_data)
     for key, value in input_data.items():
         globals()[key] = value
